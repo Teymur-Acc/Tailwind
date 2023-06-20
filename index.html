@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Document</title>
+</head>
+
+<body class = 'bg-white dark:bg-slate-900'>
+    <div class='max-w-screen-xl mx-auto'>
+        <header class='px-2 border-b flex justify-between items-center h-14'>
+            <a class='dark:text-purple-500 uppercase font-bold text-purple-800' href="">Tailwind</a>
+            <nav class='hidden md:flex items-center'>
+                <ul class='inline-flex items-center'>
+                    <li><a class='header-link' href="#">Home</a></li>
+                    <li><a class='header-link' href="#">About</a></li>
+                    <li><a class='header-link' href="#">Contact</a></li>
+                </ul>
+                <ul class='inline-flex items-center'>
+                    <li><button class='header-btn'>Login</button></li>
+                    <li><button class='header-btn'>Sign-up</button></li>
+                </ul>
+            </nav>
+            <button class='inline-block md:hidden'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </header>
+
+        <!-- Breadcrumbs -->
+        <div class='flex items-center'>
+            <div class='py-4 whitespace-nowrap overflow-y-auto flex items-center'>
+                <a class=' dark:text-slate-400 text-gray-600 hover:text-gray-800 transition-all duration-300' href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </a>
+                <span class='mx-2 text-gray-300'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </span>
+                <a class='dark:text-slate-400 text-gray-600 hover:text-gray-800 transition-all duration-300' href="#">News</a>
+                <span class='mx-2 text-gray-300'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </span>
+                <a class='dark:text-slate-400 text-gray-600 hover:text-gray-800 transition-all duration-300' href="#">Tech</a>
+            </div>
+        </div>
+
+        <!-- Banners -->
+
+        <section class='px-2 lg:flex lg:space-x-2'>
+
+            <a class='w-full lg:w-2/3 bg-gradient-to-tr from-red-500 via-purple-500 to-blue-500 hover:via-purple-500/50 bg-violet-300 h-96 mb-4 relative rounded inline-block overflow-hidden transition-all duration-300'
+                href="#">
+                <div class='absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70'></div>
+                <img class='absolute left-0 top-0 w-full h-full z-0 object-cover' src="/dist/public/img1.jpg"
+                    alt="news">
+                <div class='p-4 absolute bottom-0 left-0 z-20'>
+                    <h2 class='text-4xl font-semibold text-gray-100 leading-tight'>
+                        Lorem ipsum
+                    </h2>
+                    <span class = 'bg-gradient-to-bl from-blue-600 to-indigo-600 text-white inline-flex justify-center items-center px-4 py-1 mb-2'>React</span>
+                    <div class = 'flex mt-3'>
+                        <img class = 'h-10 w-10 rounded-full mr-2 object-cover' src="https://randomuser.me/api/portraits/women/72.jpg" alt="user">
+                        <div>
+                            <p class = 'font-semibold text-gray-200 text-sm'>Mishell Kuno</p>
+                            <time class = 'text-gray-200 text-xs'>14 March</time>
+                        </div>
+                        </img>
+                    </div>
+                </div>
+            </a>
+
+            <a class='w-full lg:w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="#">
+                <div class='absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70'></div>
+                <img class='absolute left-0 top-0 w-full h-full z-0 object-cover' src="/dist/public/img2.jpeg"
+                    alt="news">
+                <div class='p-4 absolute bottom-0 left-0 z-20'>
+                    <h2 class='text-4xl font-semibold text-gray-100 leading-tight'>
+                        Lorem ipsum
+                    </h2>
+                    <span class = 'bg-gradient-to-bl from-blue-600 to-indigo-600 text-white inline-flex justify-center items-center px-4 py-1 mb-2'>Angular</span>
+                    <div class = 'flex mt-3'>
+                        <img class = 'h-10 w-10 rounded-full mr-2 object-cover' src="https://randomuser.me/api/portraits/men/22.jpg" alt="user">
+                        <div>
+                            <p class = 'font-semibold text-gray-200 text-sm'>Kim Kutsuragi</p>
+                            <time class = 'text-gray-200 text-xs'>12 June</time>
+                        </div>
+                        </img>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <main class='lg:flex'>
+            <div class='w-full lg:w-2/3'>
+                <!-- Post Cards -->
+                <section class='px-2'>
+                    <a class='block w-full lg:flex mb-10' href="#">
+                        <img class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4" src="/dist/public/img3.jpg"
+                            alt="img">
+                        <div class='flex'>
+                            <div>
+                                <h3 class='dark:text-white mb-2 text-gray-700 font-bold text-2xl'>Integer quis urna quis diam
+                                    posuere
+                                    laoreet</h3>
+                                <p class='dark:text-slate-400 text-gray-700'>Lorem Ipsum has been the industry's standard dummy text ever
+                                    since
+                                    the
+                                    1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                    specimen book. It has survived not only five centuries, but also the leap into
+                                    electronic
+                                    typesetting, remaining essentially unchanged. </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class='block w-full lg:flex mb-10' href="#">
+                        <img class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4" src="/dist/public/img4.jpg"
+                            alt="img">
+                        <div class='flex'>
+                            <div>
+                                <h3 class='dark:text-white mb-2 text-gray-700 font-bold text-2xl'>Nunc consequat tellus at posuere
+                                    vehicula
+                                </h3>
+                                <p class='dark:text-slate-400 text-gray-700'>Long established fact that a reader will be distracted by the
+                                    readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it
+                                    has
+                                    a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                                    content
+                                    here', making it look like readable</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class='block w-full lg:flex mb-10' href="#">
+                        <img class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4" src="/dist/public/img5.jpg"
+                            alt="img">
+                        <div class='flex'>
+                            <div>
+                                <h3 class='dark:text-white mb-2 text-gray-700 font-bold text-2xl'>Mauris tempor est ac eros laoreet
+                                    luctus
+                                </h3>
+                                <p class='dark:text-slate-400 text-gray-700'>There are many variations of passages of Lorem Ipsum available,
+                                    but
+                                    the
+                                    majority have suffered alteration in some form, by injected humour, or randomised
+                                    words
+                                    which don't look even slightly believable.</p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <!-- Pagination -->
+                <div class='mt-20 mb-10'>
+                    <ul class='flex justify-center'>
+                        <li><a class='pagination-item rounded-l-lg' href="#">Previous</a></li>
+                        <li><a class='pagination-item' href="#">1</a></li>
+                        <li><a class='pagination-item' href="#">2</a></li>
+                        <li><a class='pagination-item' href="#">3</a></li>
+                        <li><a class='pagination-item' href="#">4</a></li>
+                        <li><a class='pagination-item' href="#">5</a></li>
+                        <li><a class='pagination-item rounded-r-lg' href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class='w-full lg:w-1/3 px-2 md:flex md:space-x-6 lg:block lg:space-x-0'>
+                <!-- Topics -->
+
+                <div class='w-full md:w-1/2 mb-5 lg:w-full'>
+                    <h5 class='dark:text-white font-bold text-lg uppercase text-gray-700 mb-2'>
+                        Popular News
+                    </h5>
+                    <ul>
+                        <li class='dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300'>
+                            <a class='dark:text-slate-400 flex items-center text-gray-600' href="#">
+                                <span
+                                    class='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700'></span>
+                                Angular
+                                <span class='dark:text-slate-400 text-gray-500 ml-auto'>26 articles</span>
+                            </a>
+                        </li>
+                        <li class='dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300'>
+                            <a class='dark:text-slate-400 flex items-center text-gray-600' href="#">
+                                <span
+                                    class='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700'></span>
+                                React
+                                <span class='dark:text-slate-400 text-gray-500 ml-auto'>23 articles</span>
+                            </a>
+                        </li>
+                        <li class='dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300'>
+                            <a class='dark:text-slate-400 flex items-center text-gray-600' href="#">
+                                <span
+                                    class='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700'></span>
+                                Vue
+                                <span class='dark:text-slate-400 text-gray-500 ml-auto'>18 articles</span>
+                            </a>
+                        </li>
+                        <li class='dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300'>
+                            <a class='dark:text-slate-400 flex items-center text-gray-600' href="#">
+                                <span
+                                    class='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700'></span>
+                                Svelte
+                                <span class='dark:text-slate-400 text-gray-500 ml-auto'>12 articles</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class='w-full md:w-1/2 lg:w-full'>
+                    <!-- Divider -->
+                    <div class='border border-dotted md:hidden lg:block'></div>
+                    <!-- Subscribe -->
+                    <div class='my-5 md:my-0 lg:my-5'>
+                        <h5 class='dark:text-white font-bold text-lg uppercase text-gray-700 mb-2'>Subscribe</h5>
+                        <p class='dark:text-slate-400 text-gray-600 mb-4'>Subscribe to our newspaper</p>
+                        <input placeholder="Enter your email" type="email"
+                            class='text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600 transition-all duration-300'>
+                        <button
+                            class='px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-600 transition-all duration-300'>Subscribe</button>
+                    </div>
+                    <!-- Divider -->
+                    <div class='border border-dotted md:hidden lg:block'></div>
+                </div>
+            </div>
+        </main>
+        <footer class='border-t mt-10 py-10 px-2'>
+            <div class='md:flex'>
+                <div class='w-full mb-5 md:w-2/5'>
+                    <h6 class='dark:text-white font-semibold text-gray-700 mb-3'>Company</h6>
+                    <ul>
+                        <li><a class='footer-link' href="#">Team</a></li>
+                        <li><a class='footer-link' href="#">About us</a></li>
+                    </ul>
+                </div>
+
+                <div class='w-full mb-5 md:w-2/5'>
+                    <h6 class='dark:text-white font-semibold text-gray-700 mb-3'>Content</h6>
+                    <ul>
+                        <li><a class='footer-link' href="#">Block</a></li>
+                        <li><a class='footer-link' href="#">Policy</a></li>
+                        <li><a class='footer-link' href="#">Documentation</a></li>
+                    </ul>
+                </div>
+
+                <div class='w-full md:w-1/5'>
+                    <h6 class='dark:text-white font-semibold text-gray-700 mb-3'>Contact Us</h6>
+                    <ul class='flex'>
+                        <li class='mr-2'><a class='footer-link' href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                </svg>
+                            </a></li>
+                        <li class='mr-2'><a class='footer-link' href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-7 h-7 ">
+                                    <path stroke-linecap="round"
+                                        d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+                                </svg>
+                            </a></li>
+                        <li><a class='footer-link' href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
